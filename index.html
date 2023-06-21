@@ -8,6 +8,24 @@
         integrity="sha384-GNFwBvfVxBkLMJpYMOABq3c+d3KnQxudP/mGPkzpZSTYykLBNsZEnG2D9G/X/+7D" crossorigin="anonymous"
         async></script>
 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <script>
+        document.addEventListener('mousemove', parallax);
+        function parallax(e) {
+            let _w = window.innerWidth / 2;
+            let _h = window.innerHeight / 2;
+            let _mouseX = e.clientX;
+            let _mouseY = e.clientY;
+            let _depthX = (_mouseX - _w) / _w;
+            let _depthY = (_mouseY - _h) / _h;
+            let _x = _depthX * 10; // 10 defines the intensity of shadow
+            let _y = _depthY * 10;
+            document.querySelector('.pic-shadow').style.boxShadow = `${_x}px ${_y}px 15px rgba(0, 0, 0, 0.3)`;
+        }
+    </script>
+
+
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Kevin Wang</title>
@@ -23,19 +41,19 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="#">Home</a>
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#experience">Experience</a>
+                        <a class="nav-link active" href="#experience">Experience</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#coursework">Coursework</a>
+                        <a class="nav-link active" href="#coursework">Coursework</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#projects">Projects</a>
+                        <a class="nav-link active" href="#projects">Projects</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="mailto: kevindw@umich.edu">Contact</a>
+                        <a class="nav-link active" href="mailto: kevindw@umich.edu">Contact</a>
                     </li>
                 </ul>
             </div>
@@ -49,19 +67,32 @@
         <div class="row py-lg-5 intro">
             <div class="col-lg-6 col-md-8 mx-auto" style="text-align: left;">
                 <h1 class="fw-light">Hi, I'm <strong>Kevin</strong>! 👋</h1>
-                <p class="lead text">I am a student at the University of Michigan studying Computer Science Engineering.</p>
-                <p class="lead text-muted">I have a strong foundation in programming languages such as C++ and Dart and have completed coursework in algorithms, data structures, and engineering pragmatics.</p>
+                <p class="lead text">I am a student at the University of Michigan studying Computer Science Engineering.
+                </p>
+                <p class="lead text-muted">I have a strong foundation in programming languages such as C++ and Dart and
+                    have completed coursework in algorithms, data structures, and engineering pragmatics.</p>
                 <p>
-                    <a href="#projects" class="btn btn-primary my-2">Projects</a>
-                    <a href="mailto: kevindw@umich.edu" class="btn btn-secondary my-2">Contact</a>
+                    <a href="https://github.com" target="_blank" class="btn btn-outline-secondary">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Octicons-mark-github.svg/2048px-Octicons-mark-github.svg.png" alt="GitHub logo" style="width: 20px; height: 20px; position: relative; top: -2px; left: -1px">
+                        GitHub
+                    </a>
+                    <a href="https://www.linkedin.com/in/kevin-wang-40210314a/" target="_blank" class="btn btn-outline-secondary">
+                        <img src="https://cdn-icons-png.flaticon.com/512/61/61109.png" alt="LinkedIn logo" style="width: 20px; height: 20px; position: relative; top: -2px; left: -2px">
+                        LinkedIn
+                    </a>
+                    <a href="mailto: kevindw@umich.edu" target="_blank" class="btn btn-outline-secondary">
+                        <img src="https://cdn-icons-png.flaticon.com/512/46/46951.png" alt="Email logo" style="width: 20px; height: 20px; position: relative; top: -2px; left: -2px">
+                        Contact
+                    </a>    
                 </p>
             </div>
             <div class="col-lg-6 col-md-8 mx-auto">
-                <img src="PersonalPic.jpg" class="img-fluid rounded" style="width: 65%; height: auto;" alt="Kevin's picture">
+                <img src="PersonalPic.jpg" class="img-fluid rounded pic-shadow" style="width: 65%; height: auto;"
+                    alt="Kevin's picture">
             </div>
         </div>
     </section>
-    
+
 
 
     <!--Create a new section with grid of boxes that are centered to list courses-->
@@ -120,7 +151,8 @@
                                         <ul>
                                             <li>Developed C++ software validation tester for laundry machines,
                                                 <strong>reducing manual testing by 50%</strong> and achieving
-                                                <strong>90% success rate.</strong></li>
+                                                <strong>90% success rate.</strong>
+                                            </li>
                                             <li>Created Arduino-powered PLC with customizable test scripts, improving
                                                 testing flexibility and efficiency.</li>
                                         </ul>
