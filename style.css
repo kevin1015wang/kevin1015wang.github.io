@@ -111,6 +111,11 @@
     border-color: #00979d;
 }
 
+.skillTailwind {
+    background-color: #06b6d4;
+    border-color: #06b6d4;
+}
+
 .pic-shadow {
     transition: all 0.3s cubic-bezier(.25,.8,.25,1); /* smooth transition */
     box-shadow: 20px 20px 15px rgba(0, 0, 0, 0.3); 
