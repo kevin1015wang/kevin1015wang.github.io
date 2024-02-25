@@ -116,6 +116,41 @@
     border-color: #06b6d4;
 }
 
+.skillReact {
+    background-color: #61dafb;
+    border-color: #61dafb;
+}
+
+.skillFlask {
+    background-color: #000000;
+    border-color: #000000;
+}
+
+.skillSQL {
+    background-color: #f29111;
+    border-color: #f29111;
+}
+
+.skillJava {
+    background-color: #007396;
+    border-color: #007396;
+}
+
+.skillSupabase {
+    background-color: #3ECF8E;
+    border-color: #3ECF8E;
+}
+
+.skillNFC {
+    background-color: #007396;
+    border-color: #007396;
+}
+
+.skillAWS {
+    background-color: #FF9900;
+    border-color: #FF9900;
+}
+
 .pic-shadow {
     transition: all 0.3s cubic-bezier(.25,.8,.25,1); /* smooth transition */
     box-shadow: 20px 20px 15px rgba(0, 0, 0, 0.3); 
