@@ -100,101 +100,109 @@
     <!--Create a new section with grid of boxes that are centered to list courses-->
     <div class="bg-light">
         <div class="container-lg">
-            <!--Background color light gray-->
-
             <h2 style="padding-top: 20px; padding-bottom: 5px;" id="experience">Experience</h2>
             <p>Shoutout to all these great companies for giving me the opportunity to further develop my skills and gain
                 valuable experience. I'm always looking for more opportunities!</p>
-            <div class="container">
-                <div class="row">
-                    <div class="d-flex justify-content-left">
-                        <div class="row">
-                            <div class="col-md-4">
-                                <div class=".shadow-4 card text-white bg-secondary mb-2" style="max-width: 18rem;">
-                                    <div class="card-header">
-                                        <div class="row row-cols-auto">
-                                            <div class="col-md-3"><a href="http://www.leco.com" target="_blank"><img
-                                                        src="LECOicon.png" class="img-fluid img-max"
-                                                        alt="LECO logo"></a></div>
-                                            <div class="col">LECO Corporation</div>
-                                        </div>
-                                    </div>
-                                    <div class="card-body">
-                                        <h5 class="card-title">Software Engineering Intern</h5>
-                                        <p class="card-text">
-                                        <ul>
-                                            <li>Created a Flutter app that downloaded and ran test builds software from
-                                                the
-                                                Azure DevOps API to streamline test engineers’ workflow.
-                                            </li>
-                                            <li>Fixed four errors in LECO’s flagship software to make it more reliable.
-                                            </li>
-                                        </ul>
-                                        </p>
-                                        <div class="SkillLabel skillFlutter">Flutter</div>
-                                        <div class="SkillLabel skillCsharp">C#</div>
-                                        <div class="SkillLabel skillWPF">WPF</div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-4">
-                                <div class="shadow-sm card text-white bg-secondary mb-3" style="max-width: 18rem;">
-                                    <div class="card-header">
-                                        <div class="row row-cols-auto">
-                                            <div class="col-md-3"><a href="http://www.whirlpoolcorp.com"
-                                                    target="_blank"><img src="whirlpoolnew.png"
-                                                        class="img-fluid img-max" alt="Whirlpool logo"></a></div>
-                                            <div class="col">Whirlpool Corporation</div>
-                                        </div>
-                                    </div>
-                                    <div class="card-body">
-                                        <h5 class="card-title">Software Engineering Intern</h5>
-                                        <p class="card-text">
-                                        <ul>
-                                            <li>Developed C++ software validation tester for laundry machines,
-                                                <strong>reducing manual testing by 50%</strong> and achieving
-                                                <strong>90% success rate.</strong>
-                                            </li>
-                                            <li>Created Arduino-powered PLC with customizable test scripts, improving
-                                                testing flexibility and efficiency.</li>
-                                        </ul>
-                                        </p>
-                                        <div class="SkillLabel skillCplusplus">C++</div>
-                                        <div class="SkillLabel skillArduino">Arduino</div>
-                                        <div class="SkillLabel skillPython">Python</div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-4">
-                                <div class="shadow-sm card text-white bg-secondary mb-3" style="max-width: 18rem;">
-                                    <div class="card-header">
-                                        <div class="row row-cols-auto">
-                                            <div class="col-md-2"><a href="https://www.uber.com/us/en/about"
-                                                    target="_blank"><img src="Ubericon.png"
-                                                        class="img-fluid uber-icon" alt="Uber logo"></a></div>
-                                            <div class="col">Uber</div>
-                                        </div>
-                                    </div>
-                                    <div class="card-body">
-                                        <h5 class="card-title">Software Engineering Intern</h5>
-                                        <p class="card-text">
-                                        <ul>
-                                            <li>Developed a comprehensive console web application for projects in <strong>uTranslate</strong>, eliminating the need for support tickets.</li>
-                                            <li>Worked with program managers, clients, and stakeholders on design and requirements.</li>
-                                        </ul>
-                                        </p>
-                                        <div class="SkillLabel skillReact">React</div>
-                                        <div class="SkillLabel skillgRPC">gRPC</div>
-                                        <div class="SkillLabel skillGraphQL">GraphQL</div>
-                                    </div>
-                                </div>
-                            </div>
+            <div class="d-flex flex-row justify-content-start flex-wrap gap-4">
+                <!-- LECO Card -->
+                <div class="card text-white bg-secondary" style="max-width: 18rem;">
+                    <div class="card-header">
+                        <div class="row row-cols-auto">
+                            <div class="col-md-2"><a href="http://www.leco.com" target="_blank"><img
+                                    src="LECOicon.png" class="img-fluid img-max"
+                                    alt="LECO logo"></a></div>
+                            <div class="col">LECO Corporation</div>
                         </div>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Software Engineering Intern</h5>
+                        <p class="card-text">
+                            <ul>
+                                <li>Created a Flutter app that downloaded and ran test builds software from
+                                    the Azure DevOps API to streamline test engineers’ workflow.</li>
+                                <li>Fixed four errors in LECO’s flagship software to make it more reliable.</li>
+                            </ul>
+                        </p>
+                        <div class="SkillLabel skillFlutter">Flutter</div>
+                        <div class="SkillLabel skillCsharp">C#</div>
+                        <div class="SkillLabel skillWPF">WPF</div>
+                    </div>
+                </div>
+    
+                <!-- Whirlpool Card -->
+                <div class="card text-white bg-secondary" style="max-width: 18rem;">
+                    <div class="card-header">
+                        <div class="row row-cols-auto">
+                            <div class="col-md-2"><a href="http://www.whirlpoolcorp.com"
+                                    target="_blank"><img src="whirlpoolnew.png"
+                                    class="img-fluid img-max" alt="Whirlpool logo"></a></div>
+                            <div class="col">Whirlpool Corporation</div>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Software Engineering Intern</h5>
+                        <p class="card-text">
+                            <ul>
+                                <li>Developed C++ software validation tester for laundry machines,
+                                    <strong>reducing manual testing by 50%</strong> and achieving
+                                    <strong>90% success rate.</strong></li>
+                                <li>Created Arduino-powered PLC with customizable test scripts, improving
+                                    testing flexibility and efficiency.</li>
+                            </ul>
+                        </p>
+                        <div class="SkillLabel skillCplusplus">C++</div>
+                        <div class="SkillLabel skillArduino">Arduino</div>
+                        <div class="SkillLabel skillPython">Python</div>
+                    </div>
+                </div>
+    
+                <!-- Uber Full Time Card -->
+                <div class="card text-white bg-secondary" style="max-width: 18rem;">
+                    <div class="card-header">
+                        <div class="row row-cols-auto">
+                            <div class="col-md-2"><a href="https://www.uber.com/us/en/about"
+                                    target="_blank"><img src="Ubericon.png"
+                                    class="img-fluid uber-icon" alt="Uber logo"></a></div>
+                            <div class="col">Uber</div>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Software Engineering Intern</h5>
+                        <p class="card-text">
+                            <ul>
+                                <li>Developed a comprehensive console web application for projects in <strong>uTranslate</strong>, eliminating the need for support tickets.</li>
+                                <li>Worked with program managers, clients, and stakeholders on design and requirements.</li>
+                            </ul>
+                        </p>
+                        <div class="SkillLabel skillReact">React</div>
+                        <div class="SkillLabel skillgRPC">gRPC</div>
+                        <div class="SkillLabel skillGraphQL">GraphQL</div>
+                    </div>
+                </div>
+
+                <!-- Uber Card -->
+                <div class="card text-white bg-secondary" style="width: 18rem;">
+                    <div class="card-header">
+                        <div class="row row-cols-auto">
+                            <div class="col-md-2"><a href="https://www.uber.com/us/en/about"
+                                    target="_blank"><img src="Ubericon.png"
+                                    class="img-fluid uber-icon" alt="Uber logo"></a></div>
+                            <div class="col">Uber</div>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Software Engineer</h5>
+                        <p class="card-text">
+                            <ul>
+                                <li>Incoming June 2025 in San Francisco, CA</li>
+                            </ul>
+                        </p>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+    
 
     <div class="album py-5 bg-light">
 
