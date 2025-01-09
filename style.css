@@ -181,6 +181,11 @@
     box-shadow: 20px 20px 15px rgba(0, 0, 0, 0.3); 
 }
 
+.skillLeaflet {
+    background-color: #199900;
+    border-color: #199900;
+}
+
 
 
 .externalIcon {
